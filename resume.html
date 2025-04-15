@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anindya Gupta Resume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+    .a4-container {
+      width: 210mm;
+      height: 297mm;
+      margin: auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #2e2a85;
+      color: white;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .header-left h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+    .header-left h2 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 30%;
+      object-fit: cover;
+    }
+    .header-right {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .header-right a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px 25px;
+    }
+    .left-column {
+      width: 40%;
+      padding-right: 2px;
+      padding-left: 1px;
+      border-right: 1px solid #ddd;
+    }
+    .right-column {
+      width: 67%;
+      padding-left: 15px;
+      padding-right: 1px;
+    }
+    .left-column .section {
+      margin-bottom: 6px;  /* tighter spacing for pills, adjust as needed */
+    }
+
+    .right-column .section {
+      margin-bottom: 3.5px;  /* keep this roomier for summary/experience */
+      width: 100%;
+    }
+    .section-title {
+      font-weight: bold;
+      color: #2e2a85;
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .profile-summary {
+      background-color: #f5f7ff;
+      border-left: 2px solid #2e2a85;
+      padding: 5px 10px;
+      border-radius: 2px;
+    }
+    .profile-summary p {
+      font-size: 12.7px;
+      font-style: italic;
+      line-height: 1.33;
+      margin: 0;
+    }
+    .skill-container, .interest-container, .experience-skill-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      justify-content: flex-start; /* Prevent stretching */
+    }
+    .skill-pill, .interest-pill {
+      display: inline-block;
+      font-size: 11.8px;
+      margin: 2px 3px 1px 0;
+      padding: 2.8px 6px;
+      border-radius: 12px;
+      background-color: #eee;
+      white-space: nowrap;
+    }
+    .highlight {
+      background-color: #f0e8ff;
+      color: #5a2c91;
+      padding: 0 3px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 13px;
+      margin-bottom: 1px;
+    }
+    .job-place {
+      font-size: 12px;
+      font-style: italic;
+    }
+    .dots {
+      color: #2e2a85;
+      letter-spacing: 2px;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 0;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+    ul li {
+      font-size: 12px;
+      margin-bottom: 4px; 
+      margin-top: 2px;      
+    }
+    .experience-skill-container {
+        margin-top: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;    /* Ensure alignment to left */
+        gap: 2px;
+        margin-bottom: 4px;
+        flex-direction: row;
+        max-width: 100%; /* prevent wrapping issue */
+        }
+    .exp-skill-pill {
+        font-size: 11px;
+        background-color: #eee;
+        color: #2e2a85;
+        padding: 2px 5px;
+        border-radius: 8px;
+        white-space: nowrap;
+        font-weight: 500;
+        display: inline-block;
+        max-width: 100%; /* prevent wrapping issue */
+        }
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+        }
+    .job-title-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 2px;
+        }
+    .job-duration {
+        font-size: 13px;
+        font-weight: normal;
+        color: #555;
+    }
+    .job-subline {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12.5px;
+        font-style: italic;
+        margin-bottom: 3px;
+        color: #666;
+        }
+    .job-company {
+     flex: 1;
+     }
+    .job-location {
+    white-space: nowrap;
+    text-align: right;
+    }
+    .role-divider {
+    border: none;
+    border-top: 1px dotted #bbb;
+    max-width: 50%;
+    margin: 4px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="a4-container">
+    <div class="header">
+      <div class="header-left">
+        <img src="image.jpeg" alt="Profile Photo" class="profile-pic">
+        <div>
+          <h1>Anindya Gupta</h1>
+          <h2>Global Data Analytics Manager</h2>
+        </div>
+      </div>
+      <div class="header-right">
+        
+    <div class="contact-item"><a href="mailto:eranindyagupta@gmail.com">📧 eranindyagupta@gmail.com</a></div>
+    <div class="contact-item"><a href="tel:+46707694926">📞 (+46) 707 694 926</a></div>
+    <div class="contact-item"><a href="https://www.linkedin.com/in/anindyagupta1988" target="_blank">💼 linkedin.com/anindyagupta</a></div>
+    <div class="contact-item">📍 Uppsala</div>
+    
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-column">
+        
+                <div class="section">
+                  <div class="section-title">🏭 Industry Domains</div>
+                  <div class="interest-container"><span class="interest-pill"><span class="highlight">Retail</span></span> <span class="interest-pill">Manufacturing</span> <span class="interest-pill">MedTech</span> <span class="interest-pill">Biomedical</span> <span class="interest-pill">Forestry</span> <span class="interest-pill">Consulting</span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🚀 Innovation Themes</div>
+                  <div class="interest-container"><span class="interest-pill">Digital Transformation</span> <span class="interest-pill"><span class="highlight">Process</span> Enablement</span> <span class="interest-pill">Intelligent <span class="highlight">Automation</span></span> <span class="interest-pill"><span class="highlight">AI/ML</span></span> <span class="interest-pill">GenAI</span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">📈 Strategic Drivers</div>
+                  <div class="interest-container"><span class="interest-pill"><span class="highlight">Stakeholder</span></span> <span class="interest-pill">Alignment</span> <span class="interest-pill"><span class="highlight">Scalability</span></span> <span class="interest-pill"><span class="highlight">Customer Centricity</span></span> <span class="interest-pill">Process Optimization</span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🤝 Business Leadership</div>
+                  <div class="skill-container"><span class="skill-pill tech">Strategic Execution</span> <span class="skill-pill tech"><span class="highlight">Change</span> Enablement</span> <span class="skill-pill tech"><span class="highlight">People</span> Management</span> <span class="skill-pill tech">Org Design & Scaling</span> <span class="skill-pill tech">Culture & Engagement</span> <span class="skill-pill tech"><span class="highlight">Digitalisation</span></span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🛠 Technical Leadership</div>
+                  <div class="skill-container"><span class="skill-pill tech"><span class="highlight">Enterprise Architecture</span></span> <span class="skill-pill tech"><span class="highlight">Roadmapping</span></span> <span class="skill-pill tech">Data & <span class="highlight">AI <span class="highlight">Strategy</span></span></span> <span class="skill-pill tech"><span class="highlight">Cloud</span> Solutions</span> <span class="skill-pill tech">Platform Enablement</span> <span class="skill-pill tech">ERP/CRM Integration</span> <span class="skill-pill tech"><span class="highlight">Governance Enablement</span></span> <span class="skill-pill tech">Thought Leader</span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🔧 Delivery & Ops</div>
+                  <div class="interest-container"><span class="interest-pill"><span class="highlight">Agile</span> Product Management</span> <span class="interest-pill"><span class="highlight">DevOps</span></span> <span class="interest-pill"><span class="highlight">MLOps</span></span> <span class="interest-pill">GitHub</span> <span class="interest-pill"><span class="highlight">Product Ownership</span></span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">💪 Strengths</div>
+                  <div class="interest-container"><span class="interest-pill">Humility</span> <span class="interest-pill"><span class="highlight">Innovation</span></span> <span class="interest-pill">Persistence</span> <span class="interest-pill">Team player</span> <span class="interest-pill">Resilient</span> <span class="interest-pill">Critical Thinking</span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🏐 Hobbies</div>
+                  <div class="interest-container"><span class="interest-pill">Volleyball</span> <span class="interest-pill">Reading</span> <span class="interest-pill"><span class="highlight">Coaching</span></span></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🌍 Languages</div>
+                  <div class=""><ul><li>English <span class="dots">●●●●●</span></li><li>Swedish <span class="dots">●●●○○</span></li></ul></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🏆 Achievements</div>
+                  <div class=""><ul><li>Awarded Enterprise Solution of Year (2021)</li><li>Named as Top 100 in Nordics Data & AI (2022)</li><li>Led volleyball team to state level (2007-2010)</li></ul></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">🧑‍🤝‍🧑 Volunteering</div>
+                  <div class=""><ul><li>Asst. coach for Uppsala elite volleyball team</li><li>Workshops to bridge Acadamic-Industry gap</li></ul></div>
+                </div>
+                
+                <div class="section">
+                  <div class="section-title">📞 References</div>
+                  <div class=""><ul style='list-style-type: none; padding-left: 0;'><li>References available upon request</li></ul></div>
+                </div>
+                
+      </div>
+      <div class="right-column">
+        
+        <div class="section">
+          <div class="section-title">👤 Professional Summary</div>
+          <div class="profile-summary"><p>Accomplished business-driven technical leader with 10+ years of exp. in executing  <hl>global <span class="highlight">transformation</span></hl> & growth strategies. Known for establishing robust <span class="highlight">governance</span> around digital <span class="highlight">products</span>.  Trusted for fostering positive <span class="highlight">culture</span> while engaging teams to deliver <span class="highlight">strategic</span> goals.
+</p></div>
+        </div>
+        
+        <div class="section">
+          <div class="section-title">💼 Work Experience</div>
+          
+                <div class="job-title-line">
+                    <div class="job-title">Global Data Analytics Manager</div>
+                    <div class="job-duration">📅 Aug 2024 – Current</div>
+                </div>
+            
+                    <div class="job-subline">
+                        <div class="job-company"><i>Optinova</i></div>
+                        <div class="job-location">📍 <span style="font-style: italic;">Uppsala, Sweden</span></div>
+                    </div>
+                
+                <ul>
+                    <li>Accountable for the global function of data, analytics, and integration services.</li><li>Established the global data governance model (30% Collaboration Eff. gain).</li><li>Accountable for the enterprise reference architecture.</li><li>Driving the customer-centric Data operating model as a part of business model.</li><li>Spearheading the global AI/GenAI enablement task force.</li><li>Streamlining the global BI services to improve scale & technological footprint.</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">Strategic Execution</span> <span class="exp-skill-pill">Situation Leadership</span> <span class="exp-skill-pill">Change Management</span> <span class="exp-skill-pill">Governance</span> <span class="exp-skill-pill">Scale</span></div>
+            
+                <div class="job-title-line">
+                    <div class="job-title">Senior Manager : AIA Consulting</div>
+                    <div class="job-duration">📅 Feb 2024 – July 2024</div>
+                </div>
+            
+                    <div class="job-subline">
+                        <div class="job-company"><i>Cognizant</i></div>
+                        <div class="job-location">📍 <span style="font-style: italic;">Stockholm, Sweden</span></div>
+                    </div>
+                
+                <ul>
+                    <li>Client partnership around GenAI/AI/AA capabilities (multiple clients)</li><li>Accountable for the AI/GenAI enablement & delivery team (>20) across Nordics.</li><li>Facilitated GenAI/AI landscape & governance strategy (multiple clients).</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">Strategy</span> <span class="exp-skill-pill">Management Consulting</span> <span class="exp-skill-pill">Delivery Management</span> <span class="exp-skill-pill">Governance</span> <span class="exp-skill-pill">AI/GenAI</span></div>
+            
+                <div class="job-title-line">
+                    <div class="job-title">Head of Analytics</div>
+                    <div class="job-duration">📅 Apr 2023 – Jan 2024</div>
+                </div>
+            
+                    <div class="job-subline">
+                        <div class="job-company"><i>Stora Enso</i></div>
+                        <div class="job-location">📍 <span style="font-style: italic;">Stockholm, Sweden</span></div>
+                    </div>
+                
+                <ul>
+                    <li>Accountable for the business-centric data & analytics strategy & roadmap.</li><li>Accountable for AI/NLP/Analytics services (15+ B2B/B2C products).</li><li>Spearheaded the data lifecycle & governance (30% DQ gain & 20% less COR).</li><li>Group Design & Scaling (DS/DE/SA/SE/BI/PO) and technical mentorship.</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">Strategy</span> <span class="exp-skill-pill">Servant Leadership</span> <span class="exp-skill-pill">Engineering Management</span> <span class="exp-skill-pill">Governance</span> <span class="exp-skill-pill">AI/ML/NLP</span></div>
+            
+                <div class="job-title-line">
+                    <div class="job-title">Lead Data Scientist</div>
+                    <div class="job-duration">📅 Apr 2020 – Mar 2023</div>
+                </div>
+            
+                <ul>
+                    <li>Business partnership to drive organization-wide AI innovation roadmaps.</li><li>Technical consultant for vendor proposals to align with business goals.</li><li>Accountable for the multiple AI solutions & global AI platform (SEK 18M+ ROI).</li><li>Scaled team (DS/DE/SA) and drove company-wide data science and AI literacy.</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">Agile Leadership</span> <span class="exp-skill-pill">Stakeholder</span> <span class="exp-skill-pill">Change Management</span> <span class="exp-skill-pill">Azure</span> <span class="exp-skill-pill">AI/ML</span> <span class="exp-skill-pill">Python</span> <span class="exp-skill-pill">SQL</span></div>
+            
+                <div class="job-title-line">
+                    <div class="job-title">Post-doctoral Fellow</div>
+                    <div class="job-duration">📅 Jun 2018 – Mar 2020</div>
+                </div>
+            
+                    <div class="job-subline">
+                        <div class="job-company"><i>Uppsala University</i></div>
+                        <div class="job-location">📍 <span style="font-style: italic;">Uppsala, Sweden</span></div>
+                    </div>
+                
+                <ul>
+                    <li>Designed & implemented an AI-driven workflow for precision treatment planning.</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">AI/ML</span> <span class="exp-skill-pill">Python</span> <span class="exp-skill-pill">DevOps</span> <span class="exp-skill-pill">Documentation</span> <span class="exp-skill-pill">Collaboration</span> <span class="exp-skill-pill">Supervision</span> <span class="exp-skill-pill">Simplification</span></div>
+            
+                <div class="job-title-line">
+                    <div class="job-title">Ph.D. Applied AI</div>
+                    <div class="job-duration">📅 Sep 2014 – June 2018</div>
+                </div>
+            
+                    <div class="job-subline">
+                        <div class="job-company"><i>Tallinn University of Technology</i></div>
+                        <div class="job-location">📍 <span style="font-style: italic;">Tallinn, Estonia</span></div>
+                    </div>
+                
+                <ul>
+                    <li>Designed & implemented several AI-enabled medical/biomedical applications.</li>
+                </ul>
+                <div class="experience-skill-container"><span class="exp-skill-pill">AI/ML</span> <span class="exp-skill-pill">Computer Vision</span> <span class="exp-skill-pill">Critical Thinking</span> <span class="exp-skill-pill">Communication</span> <span class="exp-skill-pill">Collaboration</span></div>
+            
+        </div>
+        
+        <div class="section">
+          <div class="section-title">🎓 Education</div>
+          
+            <div class="job-title-line">
+                <div class="job-title">MSc in Software Engineering</div>
+                <div class="job-duration">📅 Sep 2011 – Jan 2013</div>
+                </div>
+                <div class="job-subline">
+                <div class="job-company">Kingston University</div>
+                <div class="job-location">📍 London, England</div>
+                </div>
+            
+            <ul>
+                
+            </ul>
+
+            
+            
+            <div class="job-title-line">
+                <div class="job-title">B.Tech in Computer Engineering</div>
+                <div class="job-duration">📅 Sep 2006 – Aug 2010</div>
+                </div>
+                <div class="job-subline">
+                <div class="job-company">Rajasthan Technical University</div>
+                <div class="job-location">📍 Jaipur, India</div>
+                </div>
+            
+            <ul>
+                
+            </ul>
+
+            
+            
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
